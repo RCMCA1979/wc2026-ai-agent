@@ -46,7 +46,7 @@ class FormAnalyzerTool:
             "goals_conceded_avg": round(goals_conceded / total, 2),
             "momentum_score": momentum,
             "form_string": "".join(
-                ["W" if m["winner"] == team else "D" if m["winner"] == "Draw" else "L"]
+                "W" if m["winner"] == team else "D" if m["winner"] == "Draw" else "L"
                 for m in team_matches
             ),
         }
