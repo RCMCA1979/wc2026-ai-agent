@@ -135,7 +135,7 @@ class WebScraper:
                     logger.error(f"❌ Failed to scrape {url}: {str(e)}")
         
         if self.verbose:
-            logger.info(f"🎯 Total items scraped: {len(all_results)}")
+            logger.info(f"🎉 Total items scraped: {len(all_results)}")
         
         return all_results
     
